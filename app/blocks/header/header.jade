@@ -1,0 +1,67 @@
+mixin header ()
+
+    +b('section').header
+        .container
+            +e.header_flex
+                +e(href = "https://keaz.ru/").logo
+                    img(src='./images/logo.png')
+
+                +e('ul').points
+                    +e('li').points__li
+                        +e(href = "#assortment").link_shift Ассортимент
+                    +e('li').points__li
+                        +e(href = "#crash-tests").link Краш-тесты
+                    +e('li').points__li
+                        +e(href = "#shield-slider").link_less Решения
+                    +e('li').points__li
+                        +e(href = "#").menu
+                            img(src='./images/icon_points.svg')
+                        +e('ul').pull-out
+                            +e('li').pull-out__li
+                                +e(href = "#certificates-slider").menu__link Сертификаты
+                            +e('li').pull-out__li
+                                +e(href = "#catalog").menu__link Каталог
+                            +e('li').pull-out__li
+                                +e(href = "#map").menu__link Где купить?
+                            +e('li').pull-out__li
+                                +e(href = "#shield-slider").menu__link_less Решения
+                            +e('li').pull-out__li
+                                +e('p').menu__number 8 800 777 94 62
+                    
+                +e.social_network
+                    +e(href = "https://t.me/s/keaz_keaz").icon_shift
+                        img(src='./images/icon_telegram.svg')
+                    +e(href = " https://vk.com/keazgroup").icon
+                        img(src='./images/icon_vk.svg')
+                    +e(href = "https://www.youtube.com/channel/UC1YTMlPtHxDW-RbmLeuzLYg").icon
+                        img(src='./images/icon_youtube.svg')
+                        
+                +e('p').number_less 8 800 777 94 62
+                +e(href = "#consultation").button Задать вопрос
+                +e('button').burger__button
+                    +e('span').burger__line
+
+                +e('ul')(id="burger").burger__menu
+                    +e('li').pull-out__li
+                        +e(href = "#assortment").menu__link_assortment Ассортимент
+                    +e('li').pull-out__li
+                        +e(href = "#crash-tests").menu__link_crash-tests Краш-тесты
+                    +e('li').pull-out__li
+                        +e(href = "#certificates-slider").menu__link_certificates Сертификаты
+                    +e('li').pull-out__li
+                        +e(href = "#shield-slider").menu__link_shield Решения
+                    +e('li').pull-out__li
+                        +e(href = "#catalog").menu__link_catalog Каталог
+                    +e('li').pull-out__li
+                        +e(href = "#map").menu__link_map Где купить?
+                    +e('li').pull-out__li
+                        +e(href = "#consultation").menu__link_consultation Получить консультацию
+                    +e('li').pull-out__li
+                        +e('p').number_burger 8 800 777 94 62
+                    +e.social_network_burger
+                        +e(href = "https://t.me/s/keaz_keaz").icon_burger
+                            img(src='./images/icon_telegram.svg')
+                        +e(href = " https://vk.com/keazgroup").icon
+                            img(src='./images/icon_vk.svg')
+                        +e(href = "https://www.youtube.com/channel/UC1YTMlPtHxDW-RbmLeuzLYg").icon
+                            img(src='./images/icon_youtube.svg')

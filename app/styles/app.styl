@@ -1,0 +1,23 @@
+import('sprites/*')
+import('helpers/svg-size')
+@import 'helpers/variables'
+@import 'helpers/mixins'
+@import 'helpers/fonts'
+@import 'helpers/optimize'
+
+import('../blocks/**/*')
+
+body
+    font-family 'Play'
+
+.container
+    max-width 1200px
+    width 100%
+    margin 0 auto
+    padding 0 40px
+
+    +below(390px)
+        padding 0 20px
+
+main
+    overflow hidden

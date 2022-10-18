@@ -1,0 +1,58 @@
+mixin assortment ()
+
+    +b('section')(id="assortment").assortment 
+        .container
+            +e('p').title Ассортимент 
+            +e.wrapper
+                +e.text
+                    +e('p').paragraph КЭАЗ меняет представление о надежности электротехнического оборудования для жилищного сектора.
+                    +e('p').paragraph Мы, как никто другой, знаем, насколько важно обеспечить безопасность и комфорт ваших близких, и создаем такие условия с помощью оборудования КЭАЗ.
+                    +e('p').paragraph Мы объявляем о начале НОВОЙ ЭРЫ в развитии российского модульного оборудования и представляем серию устройств с предельной отключающей способностью 4,5 кА.
+                    +e('p').paragraph Создавая новое оборудование, мы опирались на 75-летний опыт разработок и производства КЭАЗ. Качество и надежность новых продуктов подтверждают множество испытаний и сертификатов. А российское производство гарантирует доступность у дистрибьюторов КЭАЗ.
+                
+                +e.available
+                    +e('p').available__title Сейчас доступно:
+                    +e.indicator
+                        +e('p').indicator__title Более 100
+                            +e.indicator__img
+                                img(src='./images/new-products.png')
+                        +e('p').indicator__text наименований новинок
+                    +e.indicator
+                        +e('p').indicator__title Более 28 000
+                            +e.indicator__img_second
+                                img(src='./images/in-the-assortment.png')
+                        +e('p').indicator__text наименований изделий в ассортименте
+                    +e.indicator
+                        +e('p').indicator__title Полный спектр
+                            +e.indicator__img_third
+                                img(src='./images/modular-equipment.png')
+                        +e('p').indicator__text модульного оборудования с предельной отключающей способность в 4,5 кА, 6 кА и 10 кА
+            +e.viewing
+                +e.list
+                    +e.item
+                        +e.main_image
+                            img(src='./images/assortment-slider_main-1.png')        
+                        +e('p').main_text Автоматические выключатели OptiDin BM63
+                    +e.item
+                        +e.main_image
+                            img(src='./images/assortment-slider_main-2.png')        
+                        +e('p').main_text Автоматические выключатели дифференциаль<br>ного тока OptiDin D63
+                    +e.item
+                        +e.main_image
+                            img(src='./images/assortment-slider_main-3.png')        
+                        +e('p').main_text Выключатели нагрузки OptiDin BM63RL
+                    +e.item
+                        +e.main_image
+                            img(src='./images/assortment-slider_main-1.png')        
+                        +e('p').main_text Автоматические выключатели OptiDin BM63
+                    +e.item
+                        +e.main_image
+                            img(src='./images/assortment-slider_main-2.png')        
+                        +e('p').main_text Автоматические выключатели дифференциального тока OptiDin D63
+                    +e.item
+                        +e.main_image
+                            img(src='./images/assortment-slider_main-3.png')        
+                        +e('p').main_text Выключатели нагрузки OptiDin BM63RL
+
+                +e.wrapper__slider
+                    +e('p').title__slider Наши новинки

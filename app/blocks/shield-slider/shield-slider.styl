@@ -1,0 +1,168 @@
+.shield-slider
+        
+    &__list
+        position relative
+        display flex
+        flex-flow row nowrap
+    
+    &__item
+        position relative
+        width 100%
+        width 380px
+        height 635px
+        margin-right 30px
+        flex-shrink 0
+        padding 35px 30px
+        background $c-white_2
+
+        +below(768px)
+            width 280px
+            margin-right 20px
+            padding 25px 20px
+            height 470px
+
+        +below(375px)
+            width 160px
+            margin-right 20px
+            padding 15px 10px
+            height 425px
+
+    &__main_image
+        position absolute
+        width 341px
+        top -100px
+        z-index 10
+
+        img
+            width 100%
+
+        +below(768px)
+            width 210px
+            left 50px
+        
+        +below(375px)
+            width 160px
+            left 0
+
+    &__small_image
+        width 70px
+        img
+            width 100%
+
+        +below(768px)
+            width 60px
+
+        +below(375px)
+            width 60px
+
+
+    &__wrap
+        position relative
+        padding-top 245px
+        display flex
+        flex-direction row nowrap
+        justify-content space-between
+
+        +below(768px)
+            padding-top 85px
+
+        +below(375px)
+            display flex
+            flex-direction row
+            flex-wrap wrap
+            justify-content space-between
+            padding-top 50px
+
+    &__title
+        position relative
+        padding-top 20px
+        font-family $Play
+        font-weight 700
+        font-size 32px
+        line-height 35px
+        color $c-black
+        +below(768px)
+            font-size 28px
+            line-height 31px
+
+        +below(375px)
+            font-size 19px
+            line-height 20px
+
+    &__text
+        position relative
+        padding-top 10px
+        font-family $Play
+        font-weight 400
+        font-size 23px
+        line-height 29px
+        color $c-bluekeaz
+
+        &:first-child
+            padding-top 15px
+
+        +below(375px)
+                font-size 14px
+                line-height 18px
+
+    &__slider
+        position relative
+        display flex
+        flex-direction row
+        justify-content flex-end
+        align-items center
+        margin-top 25px
+
+    &__swap
+        cursor pointer
+        position relative
+        margin-right 20px
+        width 60px
+        height 60px
+        background $c-orange_1
+
+        &:last-child
+            margin-right 0
+
+    &__left
+        margin 10px
+        width 40px
+        transform rotate(-180deg)
+
+        img
+            width 100%
+
+    &__rigth
+        margin 10px
+        width 40px
+
+        img
+            width 100%
+
+    .slick
+        position relative
+        height 1200px
+
+    .slick-slide
+        width 380px
+        height 100%
+        margin 100px 20px 0 0
+
+    .slick-arrow
+        position absolute
+        bottom -85px
+        font-size 0
+        border none
+        z-index 10
+        width 60px
+        height 60px
+
+    .slick-prev
+        right 80px
+        background url('../../images/slider-prev.png') no-repeat center
+
+    .slick-next
+        right 0
+        background url('../../images/slider-next.png') no-repeat center
+
+    

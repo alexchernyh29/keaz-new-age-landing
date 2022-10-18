@@ -1,0 +1,222 @@
+.assortment
+    padding 105px 0
+    +below(968px)
+        padding 70px 0
+
+    &__title
+        font-family 'Play'
+        font-weight 700
+        font-size 64px
+        line-height 90px
+        +below(968px)
+            font-size 32px
+            line-height 38px
+
+    &__paragraph
+        padding-top 18px
+        +below(968px)
+            max-width none
+
+    &__wrapper
+        display flex
+        justify-content space-between
+        +below(1080px)
+            flex-direction column
+
+    &__text
+        font-family 'Play'
+        font-style normal
+        font-weight 400
+        font-size 23px
+        line-height 140%
+        width 682px
+        +below(968px)
+            font-size 18px
+        +below(1080px)
+            width 100%
+
+    &__available
+        padding-top 17px
+        width 400px
+        +below(1080px)
+            width 100%
+
+
+    &__available__title
+        font-family 'Play'
+        font-weight 400
+        font-size 23px
+        line-height 140%
+        +below(968px)
+            font-size 18px
+
+    &__indicator
+        padding-top 20px
+
+    &__indicator__title
+        z-index 20
+        position relative
+        font-family 'Play'
+        font-style normal
+        font-weight 700
+        font-size 40px
+        line-height 140%
+        color $c-blue
+        +below(968px)
+            font-size 32px
+
+    &__indicator__text
+        font-family 'Play'
+        font-style normal
+        font-weight 400
+        font-size 23px
+        line-height 140%
+        +below(968px)
+            font-size 18px
+
+    &__indicator__img
+        position relative
+        display inline-block
+        font-size 0
+        top 15px
+        left -15px
+        z-index -1
+
+    &__list
+        display flex
+        flex-flow row nowrap
+        justify-content space-evenly
+        +below(1200px)
+            justify-content center
+    
+    &__item
+        position relative
+        margin-top 275px
+        width 387px
+        height 447px
+        background $c-white_2
+        +below(1200px)
+            height 475px
+            margin 0 10px
+            margin-top 250px
+        +below(968px)
+            &:last-child
+                display none
+        +below(768px)
+            height 399px
+        +below(665px)
+            height 238px
+        +below(468px)
+            margin-top 170px
+            height 238px
+
+    &__main_image
+        position absolute
+        top -240px
+        left 10%
+        img
+            width 100%
+        +below(768px)
+            left 10%
+        +below(665px)
+            top -240px
+            width 200px
+        +below(468px)
+            top -140px
+            width 128px
+
+    &__main_text
+        padding 255px 30px 0
+        font-family 'Play'
+        font-weight 400
+        font-size 32px
+        line-height 38px
+        br
+            display none
+            +below(376px)
+                display block
+        +below(768px)
+            font-size 26px
+            line-height 31px
+        +below(665px)
+            padding-top 120px
+            font-size 16px
+            line-height 22px
+        +below(468px)
+            padding 90px 10px 0
+
+    &__wrapper__slider
+        display flex
+        align-items center
+        justify-content space-between
+        padding 19px 12px 0
+        
+    &__title__slider
+        font-family 'Play'
+        font-style normal
+        font-weight 700
+        font-size 64px
+        line-height 140%
+        +below(968px)
+            font-size 32px
+        +below(468px)
+            width 50%
+
+    &__slider
+        display flex
+        flex-direction row
+        align-items center
+
+    &__swap
+        cursor pointer
+        position relative
+        margin-right 20px
+        width 60px
+        height 60px
+        background $c-orange_1
+
+        &:last-child
+            margin-right 0
+
+    &__left
+        margin 10px
+        width 40px
+        transform rotate(-180deg)
+
+        img
+            width 100%
+
+    &__rigth
+        margin 10px
+        width 40px
+
+        img
+            width 100%
+
+    .slick
+        position relative
+        height 1200px
+
+    .slick-slide
+        width 380px
+        height 100%
+        margin 0 20px 0 0
+        +below(1200)
+            margin 0px 20px 0 0
+
+    .slick-arrow
+        position absolute
+        bottom -85px
+        font-size 0
+        border none
+        z-index 10
+        width 60px
+        height 60px
+
+    .slick-prev
+        right 80px
+        background url('../../images/slider-prev.png') no-repeat center
+
+    .slick-next
+        right 0
+        background url('../../images/slider-next.png') no-repeat center

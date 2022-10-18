@@ -1,0 +1,218 @@
+.header
+    padding-top 22px
+    height 90px
+
+    &__logo
+        img
+            +below(665px)
+                width 136px
+            
+
+    &__header_flex
+        display flex
+        align-items center
+        justify-content space-between
+
+    &__points
+        display flex
+        +below(968px)
+            display none
+
+    &__points li
+        &:hover ul
+            display block
+
+
+    &__link
+        font-family $Play
+        font-style normal
+        font-weight 700
+        font-size 18px
+        line-height 21px
+        padding-left 30px
+        color $c-black
+        text-decoration none
+        transition color .3s
+
+        &_less
+            +below(1200px)
+                display none
+
+        &:hover
+            color $c-orangemain
+
+        &_shift
+            padding-left 0
+
+         
+    &__menu__link
+        font-family 'Play'
+        font-weight 400
+        font-size 23px
+        line-height 27px
+        color $c-black
+        text-decoration none
+
+        &_less
+            display none
+            +below(1200px)
+                display block
+
+        &:hover
+            color $c-orangemain
+
+    &__menu
+        padding-left 30px
+
+    &__pull-out
+        display none
+        z-index 1
+        position absolute
+        justify-content space-evenly
+        flex-direction column
+        padding 0 31px 0
+        gap 10px
+        top 57px
+        left 49%
+        width 207px
+        height 167px
+        background $c-white_2
+        +below(1200px)
+            top 60px
+            left 41.8%
+            height 250px
+
+
+    &__pull-out__li
+        padding-top 20px
+
+    &__menu__number
+        display none
+        font-family 'Play'
+        font-style normal
+        font-weight 700
+        font-size 18px
+        line-height 21px
+        +below(1200px)
+            display block
+
+
+    &__social_network
+        +below(968px)
+            display none
+        &_burger
+            +below(968px)
+                display block
+                padding-top 10px
+
+    &__icon
+        width 153px
+        height 46px
+        padding-left 25px
+
+        &:first-child
+            padding-left 0
+
+        &_burger
+            padding-left 0
+
+    &__number
+        font-family 'Play'
+        font-style normal
+        font-weight 700
+        font-size 18px
+        line-height 21px
+
+        &_less
+            +below(1200px)
+                display none
+        &_burger
+            padding-left 0
+
+    &__button
+        width 160px
+        height 50px
+        background-color $c-orange_1
+        border none
+        color $c-orangemain
+        font-family $Play
+        font-style normal
+        font-weight 700
+        font-size 16px
+        line-height 19px
+        padding 14px 25px
+        text-decoration none
+        +below(968px)
+            margin-left 42%
+        +below(665px)
+            margin-left 28%
+            width 129px
+            height 48px
+            font-size 14px
+            line-height 16px
+            padding 14px 0px 14px 15px
+        +below(486px)
+            margin-left 0
+
+    &__burger__menu
+        position absolute
+        right 0
+        padding-left 20px
+        top 90px
+        z-index 1000
+        width 100%
+        background $c-white
+        overflow-x hidden
+        transform translateX(-100%)
+        transition transform 0.6s ease-in-out
+
+
+        &.is-active
+            transform none
+
+    &__burger__button
+        position relative
+        display none
+        width 50px
+        height 50px
+        background-color $c-orange_1
+        border none
+        +below(968px)
+            display block
+        +below(665px)
+            width 48px
+            height 48px
+
+    &__burger__line
+        &::before
+            position absolute
+            left 13px
+            top 50%
+            transform translateY(-50%)
+            width 26px
+            height 3px
+            content ""
+            background $c-orangemain
+            transition transform 0.6s ease-in-out
+
+        &::after
+            position absolute
+            top 63%
+            left 22px
+            width 17px
+            height 3px
+            content ""
+            background $c-orangemain
+            transition transform 0.6s ease-in-out
+
+        &.is-active
+            &::before
+                transform rotate(-45deg) translate(0px, -50%)
+            &::after
+                top 45%
+                left 13px
+                width 26px
+                transform rotate(45deg) translate(0px, 50%)
+
+    &__page_lock
+        overflow hidden

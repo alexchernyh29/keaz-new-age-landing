@@ -1,0 +1,38 @@
+mixin certificates-slider ()
+
+    +b('section')(id="certificates-slider").certificates-slider
+        .container
+            +e.wrap 
+                +e('h4').title Сертификаты
+                +e.slider 
+                    +e.swap
+                        +e.left
+                            img(src='./images/next.svg')
+                    +e.swap
+                        +e.rigth
+                            img(src='./images/next.svg')
+            +e.list
+                +e.item
+                    +e.main_image
+                        img(src='./images/certificates-slider-1.png')
+                    +e('p').text ГОСТ IEC 60947-3-2016<br>для OptiDin BM63RL
+                +e.item
+                    +e.main_image
+                        img(src='./images/certificates-slider-2.png')
+                    +e('p').text ГОСТ IEC 60898-1-2020<br>для OptiDin BM63
+                +e.item
+                    +e.main_image
+                        img(src='./images/certificates-slider-3.png')
+                    +e('p').text ГОСТ IEC 61009-1-2014<br>для OptiDin D63
+                +e.item
+                    +e.main_image
+                        img(src='./images/certificates-slider-1.png')
+                    +e('p').text ГОСТ IEC 60947-3-2016<br>для OptiDin BM63RL
+                +e.item
+                    +e.main_image
+                        img(src='./images/certificates-slider-2.png')
+                    +e('p').text ГОСТ IEC 60898-1-2020<br>для OptiDin BM63
+                +e.item
+                    +e.main_image
+                        img(src='./images/certificates-slider-3.png')
+                    +e('p').text ГОСТ IEC 61009-1-2014<br>для OptiDin D63

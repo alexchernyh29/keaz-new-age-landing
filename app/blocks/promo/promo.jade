@@ -1,0 +1,13 @@
+mixin promo ()
+
+    +b('section').promo
+        .container
+            +e.description
+                +e('p').title КЭАЗ. НОВАЯ ЭРА
+                +e('p').name Модульное оборудование серии OptiDin с ПКС 4,5 кА
+                +e('p').text Российские решения для жилищного сектора
+                    +e.russian-flag
+                        img(src='./images/russian-flag.svg')
+                +e('button').button Получить консультацию
+            +e.equipment
+                img(src='./images/optidin.png')

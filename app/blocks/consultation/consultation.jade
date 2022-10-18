@@ -1,0 +1,19 @@
+mixin consultation ()
+
+    +b('section')(id="consultation").consultation
+        .container
+            +e('h4').title Получить техническую консультацию
+            +e('p').subtitle Оперативно ответим на любой вопрос!
+            +e('form').form
+                +e('p').form-info Не все данные введены корректно!
+                +e.item
+                    +e('p').input._label Имя
+                        +e('input')(placeholder="Андрей" required type='text').input._name
+                    +e('p').input._label mail@mail.ru
+                        +e('input')(placeholder="Email" required type="email").input._email._error
+                    +e('p').input._label Сколько будет ехать до Перми?
+                        +e('input')(placeholder="Ваш вопрос" required type='text').input._question
+            +e('button')(type="submit").button Отправить
+            +e.image
+                +e.equipment
+                    img(src='./images/equipment_2.png')

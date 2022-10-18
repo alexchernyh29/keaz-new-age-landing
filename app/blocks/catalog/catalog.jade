@@ -1,0 +1,24 @@
+mixin catalog ()
+
+    +b('section')(id="catalog").catalog
+        .container
+            +e('h4').title Каталог
+            +e.wrap 
+                +e('p').text Познакомиться с ассортиментом КЭАЗ
+                +e(href = "https://keaz.ru/catalog").link
+                    img(src='./images/next.svg')
+            +e.wrap 
+                +e('p').text Скачать каталог
+                +e(href = " https://files.keaz.ru/f/8801/katalog-tm-keaz-optima.pdf").link
+                    img(src='./images/donload.svg')
+            +e.wrap 
+                +e('p').text Скачать Руководства по эксплуатации
+                +e(href = "#").link
+                    img(src='./images/donload.svg')
+            +e.wrap 
+                +e('p').text Cкачать 3D модели и чертежи
+                +e(href = "#").link
+                    img(src='./images/donload.svg')
+            +e.image 
+                +e.equipment
+                    img(src='./images/equipment.png')

@@ -1,0 +1,29 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/promo/promo
+include /blocks/assortment/assortment
+include /blocks/crash-tests/crash-tests
+include /blocks/modern-solutions/modern-solutions
+include /blocks/shield-slider/shield-slider
+include /blocks/catalog/catalog
+include /blocks/certificates-slider/certificates-slider
+include /blocks/consultation/consultation
+include /blocks/map/map
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'KEAZ Landing';
+
+block content
+	main
+		+header()
+		+promo()
+		+assortment()
+		+crash-tests()
+		+modern-solutions()
+		+shield-slider()
+		+catalog()
+		+certificates-slider()
+		+consultation()
+		+map()
+		+footer()

@@ -1,0 +1,22 @@
+mixin footer ()
+
+    +b('section').footer
+        .container
+            +e.wrap_up
+                +e(href = "#assortment").link Ассортимент
+                +e(href = "#crash-tests").link Краш-тесты
+                +e(href = "#shield-slider").link Решения
+                +e(href = "#certificates-slider").link Сертификаты
+                +e(href = "#catalog").link Каталог
+                +e(href = "#map").link Где купить?
+                +e(href = "#consultation").link Получить консультацию
+            +e.wrap_down
+                +e(href = "#consultation").button Задать вопрос
+                +e('p').number 8 800 777 94 62
+                +e.wrap_link
+                    +e(href = "https://t.me/s/keaz_keaz").icon
+                        img(src='./images/icon_telegram.svg')
+                    +e(href = "https://vk.com/keazgroup").icon
+                        img(src='./images/icon_vk.svg')
+                    +e(href = "https://www.youtube.com/channel/UC1YTMlPtHxDW-RbmLeuzLYg").icon
+                        img(src='./images/icon_youtube.svg')

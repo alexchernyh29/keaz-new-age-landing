@@ -1,0 +1,108 @@
+.footer
+    padding 40px 0 40px 0
+
+    +below(768px)
+        padding-top 30px
+        padding-bottom 35px
+
+    &__wrap_up
+        display flex
+        flex-direction row
+        flex-wrap wrap
+        justify-content space-between
+        align-items center
+        +below(1200px)
+            width 740px
+            justify-content flex-start
+            align-items flex-start
+
+        +below(768px)
+            width 615px
+
+        +below(375px)
+            width 300px
+
+    &__wrap_down
+        padding-top 30px
+        display flex
+        flex-direction row nowrap
+        justify-content flex-start
+        align-items center
+        +below(375px)
+            display flex
+            flex-direction column
+            justify-content flex-start
+            align-items flex-start
+
+    &__wrap_link
+        display flex
+        flex-direction row nowrap
+        justify-content flex-start
+        +below(375px)
+            padding-top 40px
+
+    &__link
+        font-family $Play
+        font-style normal
+        font-weight 400
+        font-size 23px
+        line-height 27px
+        color $c-black
+        text-decoration none
+        transition color .3s
+
+        &:hover
+            color $c-orangemain
+
+        +below(1200px)
+            padding-right 35px
+
+        +below(375px)
+            padding 10px 15px 0 0
+
+    &__button
+        width 160px
+        height 50px
+        background-color $c-orange_1
+        border none
+        color $c-orangemain
+        font-family $Play
+        font-style normal
+        font-weight 700
+        font-size 16px
+        line-height 19px
+        padding 14px 20px
+        text-decoration none
+
+    &__number
+        margin-left 40px
+        font-family $Play
+        font-style normal
+        font-weight 700
+        font-size 23px
+        line-height 27px
+        color $c-black 
+
+        +below(768px)
+            font-size 20px
+            line-height 24px
+
+        +below(375px)
+            margin-left 0
+            margin-top 40px
+
+    &__icon
+        width 32px
+        margin-left 25px
+        transition color .3s
+
+        &:hover
+            width 37px
+
+        img
+            width 100%
+
+        &:first-child
+            margin-left 40px
+            +below(375px)
+                margin-left 0
